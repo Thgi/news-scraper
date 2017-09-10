@@ -51,9 +51,9 @@ app.use("/", routes);
 
 // Database configuration for mongoose
 // For deployment
-// mongoose.connect("mongodb://heroku_x6351mcr:uo74jneb7pgtevekcni56bm604@ds127994.mlab.com:27994/heroku_x6351mcr");
+mongoose.connect("mongodb://heroku_x6351mcr:uo74jneb7pgtevekcni56bm604@ds127994.mlab.com:27994/heroku_x6351mcr");
 // For localhost testing
-mongoose.connect("mongodb://localhost/news-scraper");
+// mongoose.connect("mongodb://localhost/news-scraper");
 
 var db = mongoose.connection;
 
